@@ -3,66 +3,136 @@
 
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>Grace Thinkful</title>
-	<link href="style.css" rel="stylesheet" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ming (Grace) Cheng: Full Stack Developer</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-  <!--test commit-->>
   <!-- initiate header-->
 	<header>
-		<h1>Grace Thinkful</h1>
-    <h2> Software Engineer </h2>
+    <div class="logo">
+      <h1 class="item">Ming (Grace) Cheng</h1>
+      <h2 class="item">Full Stack Developer</h2>
+    </div>
+		
+    <nav>
+      <ul>
+        <li>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#project">Project</a>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
 	</header>
 
 <!-- using main tag to indicate the main part of the content-->
 	<main>
-    <div class = "middle">
-		  <img src="images/profile.jpg" width="200" alt="Grace's photo" class="center">
-    </div>
+    <section id="home">
+      <div class="group">
+        <div  class="item">
+          <img src="images/grace.jpg" alt="Grace's photo">
+        </div>
+        <div class="item">
+          <h2>Hi! I'm Grace Cheng</h2>
+          <p>I am a fast-learning Full Stack Developer living in the greater Boston area.
+          <br><br>I am in the process of a career change into Software Engineering. I've been working as a Mechanical Engineer for the past 2 years. Though I am very grateful for the experience I have gained in mechanical, web development has always been the road I regret not taking. 
+          As a professional, I consider myself a team player, an effective communicator, and a good time manager. I am enthused to learn more skills as a Full Stack Developer, and to grow my professional career through collaboration with others!
+          </p>
 
-<!-- fitst section -->
-    <div id="content">
-      <h2 class="center1">Hi! I'm Grace Cheng</h2>
-      <p class="center1">I am a Mechanical Engineer living in Boston, MA.
-      <br> Now I am looking for a transition in my career and am interested in:
-      </p>
-      <ul class="center1">
-		    <li>Web development</li>
-		    <li>Learn modern Framework</li>
-		    <li>Learn mobile application development</li>
-	    </ul>
-    
+          <!--<ul class="item">
+            <li>Web development</li>
+            <li>Learn modern Framework</li>
+            <li>Learn mobile applicaition development</li>
+          </ul>-->
+          <div>
+
+          </div>
+            <form action="https://formspree.io/f/xeqpzqrn" method="POST">
+              <fieldset>
+                <legend>I'd love to hear from you!</legend>
+                  <div>
+                    <label for="name">Name:</label>
+                    <input id="name" type="text" autofocus="on" name="personName" placeholder="David Mcdonald">
+                  </div>
+                  <div>
+                    <label for="email">Email:</label>
+                    <input id="email" type="text" name="personEmail" placeholder="Email Address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                  </div>
+                  <div>
+                    <label for ="message">Message:</label>
+                    <textarea id="message" required name="personMessage" placeholder="Your Message"></textarea>
+                  </div>
+                  <button type="submit">Send</button>
+                  <button type="reset">Reset</button>
+              </fieldset>
               
-      <hr>
-<!-- second section -->
-      <h2 class="center1">About Grace Cheng</h2>
-      <p class="center1">After completing my master program at Boston University. I worked as a mechanical engineer at CRRC MA. During working there, I have come to an understanding that this is not where my career path would be going.
-      <br>
-      <br> So I decided to go study at Thinkful. I will be joining the Engineering Immersive program on November and I am really excited to learn the most popular technology on the market.
-      </p>  
-  
-      <hr>
-<!-- third section adding <article>-->
-    <article>
-      <h2 class="center1">Contact Grace Cheng</h2>
-      <p class="center1">I'd love to hear from you! Please feel free to contact me or follow me. Thank you.
-      </p>
-      <div style="text-align:center">
-      <ol>
-      <li><h3><a href="https://www.linkedin.com/in/ming-cheng-206497186" target="_blank">LinkedIn</a></h3></li>
-      <li><h3>
-      <a href="https://github.com/cmgrace" target="_blank">Github</a></h3></li>
-      </ol>
+            </form>
+          </div>
       </div>
-    </article>
-    </div>
+
+    </section>
+      
+
+    <section id="about">
+      <hr>
+      <div class="center1">
+        <h2>About Grace Cheng</h2>
+        <p>Over the last six months, I have fully committed to my Full Stack development program at Thinkful and have completed several projects,
+           such as [To be continued].
+        <br>
+        <br>In my time working as a Mechanical Engineer, I have come to better understand my passion for software engineering and how it can positively impact our society. I’m excited for the opportunity to continue growing my career in this new field, but I am also grateful for the experience I have gained at CRRC MA Corporation, which includes product development and design using various engineering software tools, as well as collaborating with internal and external partners to achieve shared goals.
+        </p>
+      </div>
+        
+    </section>
+
+    <section id="project">
+      <hr>
+      <div class="group">
+        <div class="item">
+          <h2 class="center1">Project 1</h2>
+          <ul class="item">
+            <li>Project Link</li>
+            <li>description</li>
+            <li>Skill Used</li>
+          </ul>
+        </div>
+        <div class="item">
+          <h2 class="center1">Project 2</h2>
+          <ul class="item">
+            <li>Project Link</li>
+            <li>description</li>
+            <li>Skill Used</li>
+          </ul>
+        </div>
+      </div> 
+     
+
+    </section>
+
+    <section id="contact">
+      <hr>
+        <h2 class="center1">Contact with me!</h2>
+        <p class="center1">I'd love to hear from you! Please feel free to contact me or follow me. Thank you.
+        </p>
+        <div class="center1"> 
+          <a href="https://www.linkedin.com/in/ming-cheng-206497186" class="fa fa-linkedin" target="_blank"></a>
+          <a href="https://github.com/cmgrace" class="fa fa-github" aria-hidden="true" target="_blank"></a>
+          <a href="mailto: cmgrace@bu.edu" class="fa fa-envelope" target="_blank"></a>
+        </div>
+    </section>
+   
   </main>
 
   <footer>   
-    <div class="wrapper">
-      <p id="copyright">@ Grace Thinkful</p>
+    <div>
+      <p id="copyright">@ Grace Cheng</p>
     </div>
   </footer>
 

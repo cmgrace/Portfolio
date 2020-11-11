@@ -7,62 +7,212 @@ body {
 	margin: 0;
 }
 
-
-.center {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 25%;
+header {
+	background-color: #D69A1F;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
 }
-.center1 {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	width: 50%;
+.logo {
+	display: flex;
+	flex-direction: column;
 }
-
-/* ----- header ----- */
 
 header h1 {
-	background-color: #8B0000;
-	font-family: Cursive;
-	font-size: 30px;
+	font-size: 40px;
+	font-family: 'PT Serif', serif;
 	padding-top: 30px;
 	margin: 0 0 0 0px;
 	text-align: center;
 	text-decoration: none;
-	color: #a49c8f;
+	color: #ffffff;
 }
 header h2{
-  	background-color: #8B0000;
-	font-family: Cursive;
 	font-size: 20px;
+	font-family: 'PT Serif', serif;
 	padding-top: 0px;
 	margin: 0 0 0 0px;
 	text-align: center;
 	text-decoration: none;
-	color: #a49c8f;
+	color: #ffffff;
 }
 
-article li a:link  {
+header nav {
+	display: flex;
+	justify-content: center;
+}
+
+header nav ul {
+	display: flex;
+	padding-left: 0;
+	list-style: none;
+	font-family: 'PT Serif', serif;
+}
+
+header nav ul li a {
 	text-decoration: none;
-	color: #8f99a4;
-}
-article li a:hover {
-	color: #777;
-}
-article li a:active { 
-  	color: pink;  
+	color: #ffffff;
+	padding-right: 20px;
 }
 
+header nav ul li:last-child a {
+	margin-right: 0;
+}
 
-.wrapper {
+.group {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 20px 20px 20px 20px;
+}
+
+.item {
+	flex: 1;
+	margin: 0 20px 20px 30px;
+}
+
+.item-double {
+	flex: 2;
+	display: block;
+	margin: 20px 20px 20px 20px;
+
+}
+img {
 	width: 100%;
-	margin: auto;
+	border: 5px solid #6d8517;
+	margin-top: 20px;
+
 }
 
+
+
+
+fieldset {
+	font-family: 'PT Serif', serif;
+    display: block;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    min-inline-size: min-content;
+    border-width: 10px;
+    border-style: groove;
+    border-color: #E2CC40;
+    border-image: initial;
+}
+
+fieldset legend {
+	font-size: 20px;
+	font-family: 'PT Serif', serif;
+}
+
+form {
+	padding-right: 6px;
+	/* Fixed small sizing issue on the right */
+  }
+  
+  form input,
+  form textarea {
+	width: 100%;
+	margin-bottom: 20px;
+  }
+  
+  form textarea {
+	height: 160px;
+  }
+
+@media all and (min-width: 700px) {
+	header {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		padding: 0 20px 20px 60px; 
+	}
+
+	header h1 {
+		font-size: 50px;
+	}
+
+	header h2 {
+		font-size: 25px;
+	}
+	header nav {
+		margin-top: 40px;
+	}
+	header nav ul li a {
+		font-size: 20px;
+	}
+	header nav ul li a:hover {
+		color: #bdbdbd;
+	  }
+	.group {
+		flex-direction: row;
+		justify-content: space-between;
+		margin: 20px 20px 20px 20px;
+	}
+
+}
+
+
+.center1 {
+	display: block;
+	margin: 0 20px 20px 0;
+	width: 100%;
+	text-align: center;
+}
+p {
+	font-size: 20px;
+	font-family: 'PT Serif', serif;
+	margin: 0 20px 20px 0;
+}
+
+ul {
+	font-size: 20px;
+	font-family: 'PT Serif', serif;
+}
+
+
+
+hr {
+	height: 2px;
+	background-color: #d4d4d4;
+	border: none;
+	margin: 60px 0 60px 0;
+}
+
+/* Style all font awesome icons */
+.fa {
+	padding: 20px;
+	font-size: 32px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 50%;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+	opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* LinkedIn */
+  .fa-linkedin {
+	background: #007bb5;
+	color: white;
+  }
+
+  .fa-github {
+	background: #000000;
+	color: #ffffff;
+  }
+  .fa-envelope {
+	background: #007bb5;
+	color: white;
+  }
 /* footer */
 footer {
 	text-align: center;	
@@ -70,27 +220,11 @@ footer {
 }
 footer #copyright {
   	margin: 0 0 0 0px;
-  	background-color: #8B0000;
+  	background-color: #D69A1F;
 	color: #fff;
 	margin-top: 30px;
 }
 
-#content {
-	padding-top: 60px;
-	min-height: 400px;
-}
 
-/* horizontal ruler */
 
-hr {
-	height: 2px;
-	background-color: #d4d4d4;
-	border: none;
-	margin: 60px 0 100px 0;
-}
-
-ol {
-  	display: table;
-  	margin: 0 auto;
-}
 
