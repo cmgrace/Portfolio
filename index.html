@@ -1,140 +1,203 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ming (Grace) Cheng: Full Stack Developer</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Ming (Grace) Cheng: Full Stack Developer</title>
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+  <body>
+    <!-- initiate header-->
+    <header>
+      <div class="logo">
+        <h1 class="item">Ming (Grace) Cheng</h1>
+        <h2 class="item">Full Stack Developer</h2>
+      </div>
 
-<body>
-  <!-- initiate header-->
-	<header>
-    <div class="logo">
-      <h1 class="item">Ming (Grace) Cheng</h1>
-      <h2 class="item">Full Stack Developer</h2>
-    </div>
-		
-    <nav>
-      <ul>
-        <li>
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#project">Project</a>
-          <a href="#contact">Contact</a>
-        </li>
-      </ul>
-    </nav>
-	</header>
+      <nav>
+        <ul>
+          <li>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#project">Project</a>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-<!-- using main tag to indicate the main part of the content-->
-	<main>
-    <section id="home">
-      <div class="group">
-        <div  class="item">
-          <img src="images/grace.JPG" alt="Grace's photo">
-        </div>
-        <div class="item">
-          <h2>Hi! I'm Grace Cheng</h2>
-          <p>I am a fast-learning Full Stack Developer living in the greater Boston area.
-          <br><br>I am in the process of a career change into Software Engineering. I've been working as a Mechanical Engineer for the past 2 years. Though I am very grateful for the experience I have gained in mechanical, web development has always been the road I regret not taking. 
-          As a professional, I consider myself a team player, an effective communicator, and a good time manager. I am enthused to learn more skills as a Full Stack Developer, and to grow my professional career through collaboration with others!
-          </p>
+    <!-- using main tag to indicate the main part of the content-->
+    <main>
+      <section id="home">
+        <div class="group">
+          <div class="item">
+            <img src="images/grace.JPG" alt="Grace's photo" />
+          </div>
+          <div class="item">
+            <h2>Hi! I'm Grace Cheng</h2>
+            <p>
+              I am a fast-learning Full Stack Developer living in the greater
+              Boston area. <br /><br />I am in the process of a career change
+              into Software Engineering. I've been working as a Mechanical
+              Engineer for the past 2 years. Though I am very grateful for the
+              experience I have gained in mechanical, web development has always
+              been the road I regret not taking. As a professional, I consider
+              myself a team player, an effective communicator, and a good time
+              manager. I am enthused to learn more skills as a Full Stack
+              Developer, and to grow my professional career through
+              collaboration with others!
+            </p>
 
-          <!--<ul class="item">
+            <!--<ul class="item">
             <li>Web development</li>
             <li>Learn modern Framework</li>
             <li>Learn mobile applicaition development</li>
           </ul>-->
-          <div>
-
-          </div>
+            <div></div>
             <form action="https://formspree.io/f/xeqpzqrn" method="POST">
               <fieldset>
                 <legend>I'd love to hear from you!</legend>
-                  <div>
-                    <label for="name">Name:</label>
-                    <input id="name" type="text" autofocus="on" name="personName" placeholder="David Mcdonald">
-                  </div>
-                  <div>
-                    <label for="email">Email:</label>
-                    <input id="email" type="text" name="personEmail" placeholder="Email Address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
-                  </div>
-                  <div>
-                    <label for ="message">Message:</label>
-                    <textarea id="message" required name="personMessage" placeholder="Your Message"></textarea>
-                  </div>
-                  <button type="submit">Send</button>
-                  <button type="reset">Reset</button>
+                <div>
+                  <label for="name">Name:</label>
+                  <input
+                    id="name"
+                    type="text"
+                    autofocus="on"
+                    name="personName"
+                    placeholder="David Mcdonald"
+                  />
+                </div>
+                <div>
+                  <label for="email">Email:</label>
+                  <input
+                    id="email"
+                    type="text"
+                    name="personEmail"
+                    placeholder="Email Address"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                  />
+                </div>
+                <div>
+                  <label for="message">Message:</label>
+                  <textarea
+                    id="message"
+                    required
+                    name="personMessage"
+                    placeholder="Your Message"
+                  ></textarea>
+                </div>
+                <button type="submit">Send</button>
+                <button type="reset">Reset</button>
               </fieldset>
-              
             </form>
           </div>
-      </div>
-
-    </section>
-      
-
-    <section id="about">
-      <hr>
-      <div class="center1">
-        <h2>About Grace Cheng</h2>
-        <p>Over the last six months, I have fully committed to my Full Stack development program at Thinkful and have completed several projects,
-           such as [To be continued].
-        <br>
-        <br>In my time working as a Mechanical Engineer, I have come to better understand my passion for software engineering and how it can positively impact our society. I’m excited for the opportunity to continue growing my career in this new field, but I am also grateful for the experience I have gained at CRRC MA Corporation, which includes product development and design using various engineering software tools, as well as collaborating with internal and external partners to achieve shared goals.
-        </p>
-      </div>
-        
-    </section>
-
-    <section id="project">
-      <hr>
-      <div class="group">
-        <div class="item">
-          <h2 class="center1">Project 1</h2>
-          <ul class="item">
-            <li>Project Link</li>
-            <li>description</li>
-            <li>Skill Used</li>
-          </ul>
         </div>
-        <div class="item">
-          <h2 class="center1">Project 2</h2>
-          <ul class="item">
-            <li>Project Link</li>
-            <li>description</li>
-            <li>Skill Used</li>
-          </ul>
+      </section>
+
+      <section id="about">
+        <hr />
+        <div class="center1">
+          <h2>About Grace Cheng</h2>
+          <p>
+            Over the last six months, I have fully committed to my Full Stack
+            development program at Thinkful and have completed several projects,
+            such as Amazon-Clone[To be continued].
+            <br />
+            <br />In my time working as a Mechanical Engineer, I have come to
+            better understand my passion for software engineering and how it can
+            positively impact our society. I’m excited for the opportunity to
+            continue growing my career in this new field, but I am also grateful
+            for the experience I have gained at CRRC MA Corporation, which
+            includes product development and design using various engineering
+            software tools, as well as collaborating with internal and external
+            partners to achieve shared goals.
+          </p>
         </div>
-      </div> 
-     
+      </section>
 
-    </section>
+      <section id="project">
+        <hr />
+        <div class="group">
+          <div class="item">
+            <h2 class="center1">
+              Project 1 Amazon-Clone
+              <a href="https://amazon-client.cmgrace.vercel.app">Live Link</a>
+            </h2>
+            <ul class="item">
+              <li>
+                Designed, architected and wrote the frond-end using ReactJS and
+                AJAX with reusable components for speed and simplicity
+              </li>
+              <br />
+              <li>
+                Built RESTful API and constructed server layer using Node,
+                Express and Postgres for communication and data management
+              </li>
+              <br />
+              <li>
+                Followed Test Driven Development paradigm to write single unit
+                tests before function code to improve code quality
+              </li>
+            </ul>
+          </div>
+          <div class="item">
+            <h2 class="center1">Project 2</h2>
+            <ul class="item">
+              <li>Project Link</li>
+              <li>description</li>
+              <li>Skill Used</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-    <section id="contact">
-      <hr>
+      <section id="contact">
+        <hr />
         <h2 class="center1">Contact with me!</h2>
-        <p class="center1">I'd love to hear from you! Please feel free to contact me or follow me. Thank you.
+        <p class="center1">
+          I'd love to hear from you! Please feel free to contact me or follow
+          me. Thank you.
         </p>
-        <div class="center1"> 
-          <a href="https://www.linkedin.com/in/ming-cheng-206497186" class="fa fa-linkedin" target="_blank"></a>
-          <a href="https://github.com/cmgrace" class="fa fa-github" aria-hidden="true" target="_blank"></a>
-          <a href="mailto: cmgrace@bu.edu" class="fa fa-envelope" target="_blank"></a>
+        <div class="center1">
+          <a
+            href="https://www.linkedin.com/in/ming-cheng-206497186"
+            class="fa fa-linkedin"
+            target="_blank"
+          ></a>
+          <a
+            href="https://github.com/cmgrace"
+            class="fa fa-github"
+            aria-hidden="true"
+            target="_blank"
+          ></a>
+          <a
+            href="mailto: cmgrace@bu.edu"
+            class="fa fa-envelope"
+            target="_blank"
+          ></a>
         </div>
-    </section>
-   
-  </main>
+      </section>
+    </main>
 
-  <footer>   
-    <div>
-      <p id="copyright">@ Grace Cheng</p>
-    </div>
-  </footer>
+    <footer>
+      <div>
+        <p id="copyright">@ Grace Cheng</p>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
   </body>
