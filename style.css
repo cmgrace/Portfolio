@@ -116,6 +116,28 @@ form textarea {
   height: 160px;
 }
 
+.center {
+  margin-left: auto;
+  text-align: center;
+}
+
+.projects {
+  text-align: center;
+  margin-right: 40px;
+}
+.project {
+  display: flex;
+
+  text-align: center;
+}
+
+.picture__display {
+  list-style-type: none;
+}
+.project__item {
+  max-width: 500px;
+}
+
 @media all and (min-width: 700px) {
   header {
     display: flex;
@@ -154,6 +176,12 @@ form textarea {
   width: 100%;
   text-align: center;
 }
+
+.center {
+  margin-left: 10px;
+  text-align: center;
+}
+
 p {
   font-size: 20px;
   font-family: "PT Serif", serif;
