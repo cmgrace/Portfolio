@@ -79,6 +79,9 @@ img {
   border: 5px solid #6d8517;
   margin-top: 20px;
 }
+.project__img {
+  max-width: 600px;
+}
 
 fieldset {
   font-family: "PT Serif", serif;
@@ -123,19 +126,15 @@ form textarea {
 
 .projects {
   text-align: center;
-  margin-right: 40px;
+  margin-right: 30px;
 }
 .project {
   display: flex;
-
   text-align: center;
 }
 
 .picture__display {
   list-style-type: none;
-}
-.project__item {
-  max-width: 500px;
 }
 
 @media all and (min-width: 700px) {
